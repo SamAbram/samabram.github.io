@@ -1,1 +1,62 @@
-{\rtf1}
+#floatright {
+    float: right;
+}
+
+li ~ li > a {
+    font-weight: bold;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, h5::first-letter, h6::first-letter {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+dt + dd {
+    font-style: italic;
+}
+
+tr + tr > td {
+    padding: 2px;
+}
+
+#flex {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#flex > iframe {
+    flex: 0 1 20px;
+    align-self: center;
+}
+
+#bigger {
+    flex-grow: 10 !important;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "image1 image2" 
+        "image3 image4";
+}
+
+#grid:nth-child(0) {
+    grid-area: image1;
+}
+
+#grid:nth-child(1) {
+    grid-area: image2;
+}
+
+#grid:nth-child(2) {
+    grid-area: image3;
+}
+
+#grid:nth-child(3) {
+    grid-area: image4;
+}

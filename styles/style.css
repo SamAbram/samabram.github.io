@@ -1,1 +1,21 @@
-{\rtf1}
+body {
+    background-image: url("../Images/Smuggs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    margin: 0 20px;
+}
+    
+table, th, td {
+    padding: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
